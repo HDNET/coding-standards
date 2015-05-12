@@ -82,6 +82,8 @@
 	<rule ref="Zend.NamingConventions.ValidVariableName">
 		<!-- Konflikt mit Squiz.WhiteSpace.FunctionSpacing.After -->
 		<exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+		<!-- Konflikt mit json_decode zugriffen -->
+		<exclude name="Zend.NamingConventions.ValidVariableName.NotCamelCaps"/>
 	</rule>
 	<rule ref="Generic.Classes.DuplicateClassName"/>
 	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
