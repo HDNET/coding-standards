@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<ruleset name="HDNET-Black">
+	<!-- Include Symfony2 Ruleset -->
+    <rule ref="Symfony2">
+    	<exclude name="Symfony2.Commenting.ClassComment.Missing"/>
+    	<exclude name="PEAR.Functions.ValidDefaultValue.NotAtEnd"/>
+    	<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+    </rule>
+
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+	<rule ref="Squiz.Arrays.ArrayDeclaration">
+		<!-- Indent der Arrays gefällt mir nicht ...-->
+		<exclude name="Squiz.Arrays.ArrayDeclaration.KeyNotAligned"/>
+		<exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned"/>
+		<!-- Indent der Klammern gefällt mir nicht ...-->		
+		<exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned"/>
+	</rule>
+
+    <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+    	<properties>
+	    	<property name="spacing" value="1"/>
+    	</properties>
+    </rule>
+    <rule ref="Squiz.Scope.StaticThisUsage"/>
+    <rule ref="Squiz.PHP.CommentedOutCode">
+    	<properties>
+    		<property name="maxPercentage" value="10"/>
+		</properties>
+    </rule>
+
+    <rule ref="Squiz.PHP.DisallowObEndFlush"/>
+    <rule ref="Squiz.PHP.ForbiddenFunctions">
+    	<properties>
+    		<property name="forbiddenFunctions" type="array" value="error_log=>null,print_r=>null,var_dump=>null,var_export=>null,die=>null,exit=>null,echo=>null,sizeof=>count,delete=>unset,join=>implode,is_null=>null,ini_set=>null"/>
+		</properties>
+    </rule>
+    
+	<rule ref="Squiz.PHP.Eval"/>	
+	<rule ref="Squiz.PHP.GlobalKeyword"/>
+	<rule ref="Squiz.PHP.Heredoc"/>
+	<rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+    <rule ref="Squiz.PHP.NonExecutableCode"/>
+    <rule ref="Squiz.Operators.ValidLogicalOperators"/>
+	<rule ref="Squiz.Objects.ObjectMemberComma"/>
+	<rule ref="Squiz.Functions.GlobalFunction"/>
+	<rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
+	<rule ref="Squiz.ControlStructures.ControlSignature"/>
+	<rule ref="Squiz.ControlStructures.InlineIfDeclaration"/>
+	<rule ref="Squiz.ControlStructures.SwitchDeclaration">
+		<exclude name="Squiz.ControlStructures.SwitchDeclaration.BreakIndent" />
+	</rule>
+	<rule ref="Squiz.Commenting.DocCommentAlignment"/>
+	<rule ref="Squiz.Commenting.EmptyCatchComment"/>
+	<rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>	
+	<rule ref="Squiz.Commenting.InlineComment">
+		<!-- kollodiert mit Squiz.PHP.CommentedOutCode.Found -->
+		<exclude name="Squiz.Commenting.InlineComment.DocBlock"/>
+	</rule>
+	<rule ref="Squiz.Commenting.PostStatementComment"/>
+	<rule ref="Squiz.Commenting.VariableComment">
+		<!-- Will von int auf integer geändert haben -->
+		<exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/>
+		<!-- Symfony/Doctrine Tags werden dadurch nicht mehr erlaubt -->
+		<exclude name="Squiz.Commenting.VariableComment.TagNotAllowed"/>
+	</rule>
+	<rule ref="Squiz.Classes.ClassDeclaration"/>
+	<rule ref="Squiz.Classes.SelfMemberReference"/>
+	<rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+	<rule ref="Generic.Formatting.MultipleStatementAlignment"/>
+	<rule ref="Generic.Files.LineLength">
+    	<properties>
+        	<property name="lineLimit" value="140"/>
+	        <property name="absoluteLineLimit" value="140"/>
+    	</properties>
+	</rule>
+	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
+	    <properties>
+    	    <property name="spacing" value="1"/>
+	    </properties>
+	</rule>
+	<rule ref="Zend.NamingConventions.ValidVariableName">
+		<!-- Konflikt mit Squiz.WhiteSpace.FunctionSpacing.After -->
+		<exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+	</rule>
+	<rule ref="Generic.Classes.DuplicateClassName"/>
+	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+	<rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+	<rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+	<rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+	<rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
+	<rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+	<rule ref="Generic.Formatting.MultipleStatementAlignment"/>
+	<rule ref="Generic.Formatting.SpaceAfterCast"/>
+	<rule ref="Generic.Functions.CallTimePassByReference"/>
+	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
+	<rule ref="Generic.Metrics.NestingLevel">
+    	<properties>
+        	<property name="absoluteNestingLevel" value="5"/>
+	    </properties>
+	</rule>
+	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
+	<rule ref="Generic.PHP.DeprecatedFunctions"/>
+	<rule ref="Generic.PHP.DisallowShortOpenTag"/>
+	<rule ref="Generic.PHP.NoSilencedErrors"/>
+	<rule ref="Generic.Strings.UnnecessaryStringConcat"/>
+	<rule ref="MySource.PHP.GetRequestData"/>
+	<rule ref="PEAR.Commenting.InlineComment"/>
+	<rule ref="PEAR.Formatting.MultiLineAssignment"/>
+	<rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
+	<rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
+	<rule ref="PEAR.WhiteSpace.ScopeIndent"/>
+	<rule ref="PSR1.Classes.ClassDeclaration"/>
+	<rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
+	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
+		<properties>
+			<property name="spacing" value="1"/>
+		</properties>
+	</rule>
+	<rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
+	<rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
+	<rule ref="Squiz.WhiteSpace.MemberVarSpacing"/>
+	<rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
+	<rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+	<rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+	<rule ref="Zend.Files.ClosingTag"/>
+	<rule ref="Zend.NamingConventions.ValidVariableName"/>   
+</ruleset>
