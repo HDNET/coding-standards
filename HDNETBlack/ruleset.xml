@@ -47,7 +47,9 @@
 	<rule ref="Squiz.ControlStructures.SwitchDeclaration">
 		<exclude name="Squiz.ControlStructures.SwitchDeclaration.BreakIndent" />
 	</rule>
-	<rule ref="Squiz.Commenting.DocCommentAlignment"/>
+	<rule ref="Squiz.Commenting.DocCommentAlignment">
+		<exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar" />
+	</rule>
 	<rule ref="Squiz.Commenting.EmptyCatchComment"/>
 	<rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>	
 	<rule ref="Squiz.Commenting.InlineComment">
