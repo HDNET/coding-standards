@@ -104,7 +104,6 @@
 	<rule ref="MySource.PHP.GetRequestData"/>
 	<rule ref="PEAR.Formatting.MultiLineAssignment"/>
 	<rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
-	<rule ref="PEAR.WhiteSpace.ScopeIndent"/>
 	<rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
 	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
 		<properties>
