@@ -25,7 +25,7 @@
     <rule ref="Squiz.Scope.StaticThisUsage"/>
     <rule ref="Squiz.PHP.CommentedOutCode">
     	<properties>
-    		<property name="maxPercentage" value="10"/>
+    		<property name="maxPercentage" value="80"/>
 		</properties>
     </rule>
 
