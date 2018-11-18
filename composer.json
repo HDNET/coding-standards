@@ -1,0 +1,14 @@
+{
+    "name": "hdnet/coding-standards",
+    "type": "phpcodesniffer-standard",
+    "description": "CodeSniffer ruleset for HDNET Team Black",
+    "homepage": "https://github.com/hdnet/coding-standards",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "HDNET\\CodingStandards\\HDNETBlack\\": "HDNETBlack"
+        }
+    }
+}
