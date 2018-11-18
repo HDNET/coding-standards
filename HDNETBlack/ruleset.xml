@@ -29,10 +29,9 @@
 		</properties>
     </rule>
 
-    <rule ref="Squiz.PHP.DisallowObEndFlush"/>
-    <rule ref="Squiz.PHP.ForbiddenFunctions">
-    	<properties>
-    		<property name="forbiddenFunctions" type="array" value="error_log=>null,print_r=>null,var_dump=>null,var_export=>null,die=>null,exit=>null,echo=>null,sizeof=>count,delete=>unset,join=>implode,is_null=>null,ini_set=>null"/>
+	<rule ref="Generic.PHP.ForbiddenFunctions">
+		<properties>
+			<property name="forbiddenFunctions" type="array" value="error_log=>null,print_r=>null,var_dump=>null,var_export=>null,die=>null,exit=>null,echo=>null,sizeof=>count,delete=>unset,join=>implode,is_null=>null,ini_set=>null,ob_end_flush=>null"/>
 		</properties>
     </rule>
     
