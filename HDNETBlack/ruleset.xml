@@ -1,11 +1,17 @@
 <?xml version="1.0"?>
 <ruleset name="HDNETBlack">
-	<!-- Include Symfony2 Ruleset -->
-    <rule ref="Symfony2">
-    	<exclude name="Symfony2.Commenting.ClassComment.Missing"/>
-    	<exclude name="PEAR.Functions.ValidDefaultValue.NotAtEnd"/>
-    	<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
-    </rule>
+	<!-- Include Symfony Ruleset -->
+	<rule ref="Symfony">
+		<exclude name="Symfony.Commenting.ClassComment.Missing"/>
+		<exclude name="PEAR.Functions.ValidDefaultValue.NotAtEnd"/>
+		<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+		<exclude name="Symfony.Commenting.Annotations.Invalid"/>
+		<exclude name="Symfony.Commenting.License.Warning"/>
+		<exclude name="Symfony.Functions.Arguments.Invalid"/>
+		<exclude name="Symfony.Commenting.FunctionComment.Missing"/>
+		<exclude name="Symfony.Formatting.ReturnOrThrow.Invalid"/>
+		<exclude name="Symfony.ControlStructure.YodaConditions.Invalid"/>
+	</rule>
 
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 	<rule ref="Squiz.Arrays.ArrayDeclaration">
