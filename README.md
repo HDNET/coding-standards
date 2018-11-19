@@ -26,7 +26,7 @@ Datei .phpcs.xml anlegen für neue Projekte
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <ruleset name="Example">
-  <config name="installed_paths" value="/app/vendor/escapestudios/symfony2-coding-standard/,/app/vendor/hdnet/coding-standards" />
+  <config name="installed_paths" value="../../vendor/escapestudios/symfony2-coding-standard/,../../vendor/hdnet/coding-standards" />
   <rule ref="HDNETBlack"/>
 </ruleset>
 ```
