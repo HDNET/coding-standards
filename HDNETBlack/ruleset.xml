@@ -1,45 +1,45 @@
 <?xml version="1.0"?>
 <ruleset name="HDNETBlack">
 	<!-- Include Symfony2 Ruleset -->
-    <rule ref="Symfony2">
-    	<exclude name="Symfony2.Commenting.ClassComment.Missing"/>
-    	<exclude name="PEAR.Functions.ValidDefaultValue.NotAtEnd"/>
-    	<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
-    </rule>
+	<rule ref="Symfony2">
+		<exclude name="Symfony2.Commenting.ClassComment.Missing"/>
+		<exclude name="PEAR.Functions.ValidDefaultValue.NotAtEnd"/>
+		<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+	</rule>
 
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 	<rule ref="Squiz.Arrays.ArrayDeclaration">
 		<!-- Indent der Arrays gefällt mir nicht ...-->
 		<exclude name="Squiz.Arrays.ArrayDeclaration.KeyNotAligned"/>
 		<exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned"/>
-		<!-- Indent der Klammern gefällt mir nicht ...-->		
+		<!-- Indent der Klammern gefällt mir nicht ...-->
 		<exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned"/>
 	</rule>
 
-    <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
-    <rule ref="Squiz.Strings.ConcatenationSpacing">
-    	<properties>
-	    	<property name="spacing" value="1"/>
-    	</properties>
-    </rule>
-    <rule ref="Squiz.Scope.StaticThisUsage"/>
-    <rule ref="Squiz.PHP.CommentedOutCode">
-    	<properties>
-    		<property name="maxPercentage" value="80"/>
+	<rule ref="Squiz.Strings.DoubleQuoteUsage"/>
+	<rule ref="Squiz.Strings.ConcatenationSpacing">
+		<properties>
+			<property name="spacing" value="1"/>
 		</properties>
-    </rule>
+	</rule>
+	<rule ref="Squiz.Scope.StaticThisUsage"/>
+	<rule ref="Squiz.PHP.CommentedOutCode">
+		<properties>
+			<property name="maxPercentage" value="80"/>
+		</properties>
+	</rule>
 
-    <rule ref="Squiz.PHP.DisallowObEndFlush"/>
-    <rule ref="Squiz.PHP.ForbiddenFunctions">
-    	<properties>
-    		<property name="forbiddenFunctions" type="array" value="error_log=>null,print_r=>null,var_dump=>null,var_export=>null,die=>null,exit=>null,echo=>null,sizeof=>count,delete=>unset,join=>implode,is_null=>null,ini_set=>null"/>
+	<rule ref="Squiz.PHP.DisallowObEndFlush"/>
+	<rule ref="Squiz.PHP.ForbiddenFunctions">
+		<properties>
+			<property name="forbiddenFunctions" type="array" value="error_log=>null,print_r=>null,var_dump=>null,var_export=>null,die=>null,exit=>null,echo=>null,sizeof=>count,delete=>unset,join=>implode,is_null=>null,ini_set=>null"/>
 		</properties>
-    </rule>
-    
-	<rule ref="Squiz.PHP.Eval"/>	
+	</rule>
+
+	<rule ref="Squiz.PHP.Eval"/>
 	<rule ref="Squiz.PHP.GlobalKeyword"/>
-    <rule ref="Squiz.PHP.NonExecutableCode"/>
-    <rule ref="Squiz.Operators.ValidLogicalOperators"/>
+	<rule ref="Squiz.PHP.NonExecutableCode"/>
+	<rule ref="Squiz.Operators.ValidLogicalOperators"/>
 	<rule ref="Squiz.Objects.ObjectMemberComma"/>
 	<rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
 	<rule ref="Squiz.ControlStructures.InlineIfDeclaration"/>
@@ -50,7 +50,7 @@
 		<exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar" />
 	</rule>
 	<rule ref="Squiz.Commenting.EmptyCatchComment"/>
-	<rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>	
+	<rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
 	<rule ref="Squiz.Commenting.InlineComment">
 		<!-- kollodiert mit Squiz.PHP.CommentedOutCode.Found -->
 		<exclude name="Squiz.Commenting.InlineComment.DocBlock"/>
@@ -67,15 +67,15 @@
 	<rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
 	<rule ref="Generic.Formatting.MultipleStatementAlignment"/>
 	<rule ref="Generic.Files.LineLength">
-    	<properties>
-        	<property name="lineLimit" value="140"/>
-	        <property name="absoluteLineLimit" value="140"/>
-    	</properties>
+		<properties>
+			<property name="lineLimit" value="140"/>
+			<property name="absoluteLineLimit" value="140"/>
+		</properties>
 	</rule>
 	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
-	    <properties>
-    	    <property name="spacing" value="1"/>
-	    </properties>
+		<properties>
+			<property name="spacing" value="1"/>
+		</properties>
 	</rule>
 	<rule ref="Zend.NamingConventions.ValidVariableName">
 		<!-- Konflikt mit Squiz.WhiteSpace.FunctionSpacing.After -->
@@ -92,9 +92,9 @@
 	<rule ref="Generic.ControlStructures.InlineControlStructure"/>
 	<rule ref="Generic.Formatting.MultipleStatementAlignment"/>
 	<rule ref="Generic.Metrics.NestingLevel">
-    	<properties>
-        	<property name="absoluteNestingLevel" value="5"/>
-	    </properties>
+		<properties>
+			<property name="absoluteNestingLevel" value="5"/>
+		</properties>
 	</rule>
 	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
 	<rule ref="Generic.PHP.DeprecatedFunctions"/>
