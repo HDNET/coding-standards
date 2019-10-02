@@ -119,6 +119,7 @@
 	<rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
 	<rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
 	<rule ref="Squiz.WhiteSpace.MemberVarSpacing"/>
+	<rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing"/>
 	<rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
 	<rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
 </ruleset>
